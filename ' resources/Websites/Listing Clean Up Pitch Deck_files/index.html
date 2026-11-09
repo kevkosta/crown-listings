@@ -1058,7 +1058,146 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
       @media (max-width: 599px) {
         .x-lang__btn { min-width: var(--tap); height: var(--tap); }
       }
-    </style>
+    /* CROWN_CHECKOUT_CSS_START */
+.x-trust-banner {
+  margin-top: 20px;
+  padding: 24px 28px;
+  border-radius: var(--r-l);
+  background: var(--fill-tertiary);
+  border: 1px solid var(--stroke-primary);
+}
+.x-trust-banner h3 {
+  font: var(--type-heading);
+  margin: 0 0 8px;
+}
+.x-trust-banner p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+.x-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.x-price-card {
+  padding: 24px;
+  border-radius: var(--r-l);
+  background: var(--fill-tertiary);
+  border: 1.5px solid var(--stroke-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.x-price-card--featured {
+  border-color: var(--fill-primary);
+  box-shadow: var(--hark-shadow);
+}
+.x-price-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  font: var(--type-tag);
+  background: var(--fill-primary);
+  color: var(--text-primary-on);
+  margin-bottom: 6px;
+}
+.x-price-card__badge--green {
+  background: var(--fill-system-green);
+  color: #fff;
+}
+.x-price-card__title {
+  font: var(--type-heading);
+  margin: 0;
+}
+.x-price-card__amount {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 6px 0;
+  color: var(--text-primary);
+}
+.x-price-card__amount small {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+.x-price-card__desc {
+  font-size: var(--size-small);
+  color: var(--text-secondary);
+  margin: 0;
+}
+.x-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.x-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--fill-primary);
+  background: var(--fill-primary);
+  color: var(--text-primary-on);
+  font: var(--type-label);
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.x-action-btn:hover { opacity: 0.9; }
+.x-action-btn--outline {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--stroke-primary);
+}
+.x-qr-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgb(0 0 0 / 0.65);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  display: none;
+  place-items: center;
+  padding: 20px;
+}
+.x-qr-modal.is-open { display: grid; }
+.x-qr-box {
+  max-width: 400px;
+  width: 100%;
+  background: var(--fill-primary-on);
+  color: var(--text-primary);
+  border: 1px solid var(--stroke-primary);
+  border-radius: var(--r-l);
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: var(--hark-shadow);
+}
+.x-qr-box h3 { font: var(--type-heading); margin: 0 0 6px; }
+.x-qr-box p { font-size: var(--size-small); color: var(--text-secondary); margin: 0 0 16px; }
+.x-qr-placeholder {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 16px;
+  border-radius: var(--r-m);
+  background: #fff;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid var(--stroke-primary);
+  display: grid;
+  place-items: center;
+}
+/* CROWN_CHECKOUT_CSS_END */
+</style>
   </head>
   <body>
     <div class="x-lang" role="group" aria-label="ภาษา / Language">
@@ -1266,6 +1405,98 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
               </ul>
             </div>
           </div>
+          <!-- CROWN_CHECKOUT_START -->
+          <div class="x-trust-banner">
+            <h3 data-th="เคารพความถูกต้องของข้อมูลต้นฉบับ · มั่นใจด้วยภาษาอังกฤษระดับเจ้าของภาษา" data-en="Originality Respected · Peace of Mind with Native International Copy">เคารพความถูกต้องของข้อมูลต้นฉบับ · มั่นใจด้วยภาษาอังกฤษระดับเจ้าของภาษา</h3>
+            <p data-th="เราให้ความสำคัญกับความถูกต้องและเอกลักษณ์ของข้อมูลที่คุณตั้งใจรวบรวม ทุกภาพและคำบรรยายถูกปรับปรุงโดยรักษาความจริงของห้องพัก 100% พร้อมตรวจสอบหน่วยวัดและเขียนคำบรรยายภาษาอังกฤษโดยนักออกแบบนานาชาติ เพื่อให้คุณสบายใจได้ว่าประกาศของคุณดูเป็นธรรมชาติ น่าเชื่อถือ และไม่สะดุดตาในสายตาลูกค้าต่างชาติและลูกค้าไทยระดับพรีเมียม" data-en="We deeply value the accuracy and originality of the property details you work hard to gather. Every photo and sentence stays 100% faithful to the real unit, while giving you complete peace of mind that your English copywriting reads naturally, accurately, and effortlessly to discerning international expats and Thai clients alike.">เราให้ความสำคัญกับความถูกต้องและเอกลักษณ์ของข้อมูลที่คุณตั้งใจรวบรวม ทุกภาพและคำบรรยายถูกปรับปรุงโดยรักษาความจริงของห้องพัก 100% พร้อมตรวจสอบหน่วยวัดและเขียนคำบรรยายภาษาอังกฤษโดยนักออกแบบนานาชาติ เพื่อให้คุณสบายใจได้ว่าประกาศของคุณดูเป็นธรรมชาติ น่าเชื่อถือ และไม่สะดุดตาในสายตาลูกค้าต่างชาติและลูกค้าไทยระดับพรีเมียม</p>
+          </div>
+
+          <div class="x-pricing-grid" id="download">
+            <div class="x-price-card x-price-card--featured">
+              <div>
+                <span class="x-price-card__badge x-price-card__badge--green" data-th="ตัวอย่างแรกของคุณ · ฟรี" data-en="Your First Sample · Free">ตัวอย่างแรกของคุณ · ฟรี</span>
+                <h3 class="x-price-card__title" data-th="ชุดไฟล์ Noble Form (#500712119)" data-en="Noble Form Pack (#500712119)">ชุดไฟล์ Noble Form (#500712119)</h3>
+                <p class="x-price-card__amount">฿0 <small data-th="/ พร้อมดาวน์โหลดทันที" data-en="/ ready right now">/ พร้อมดาวน์โหลดทันที</small></p>
+                <p class="x-price-card__desc" data-th="ภาพความละเอียดสูงทั้ง 8 ภาพ (ย้ายลายน้ำเข้ามุมเงียบ) + แผนที่และสถานที่ใกล้เคียง + คำบรรยาย 2 ภาษาที่แก้ไขแล้ว" data-en="All 8 upscaled high-res photos (with silent corner watermark) + map & transit cards + verified TH/EN copy.">ภาพความละเอียดสูงทั้ง 8 ภาพ (ย้ายลายน้ำเข้ามุมเงียบ) + แผนที่และสถานที่ใกล้เคียง + คำบรรยาย 2 ภาษาที่แก้ไขแล้ว</p>
+              </div>
+              <div class="x-btn-row">
+                <a class="x-action-btn" href="./Crown_Listings_0001_Noble_Form_Thonglor_Pack.zip" download="Crown_Listings_0001_Noble_Form_Thonglor_Pack.zip" data-th="⬇ ดาวน์โหลดชุดไฟล์ทั้งหมด (.ZIP)" data-en="⬇ Download Full High-Res Pack (.ZIP)">⬇ ดาวน์โหลดชุดไฟล์ทั้งหมด (.ZIP)</a>
+              </div>
+            </div>
+
+            <div class="x-price-card">
+              <div>
+                <span class="x-price-card__badge" data-th="รายประกาศ" data-en="Per Listing">รายประกาศ</span>
+                <h3 class="x-price-card__title" data-th="Crown Makeover · รายห้อง" data-en="Single Listing Upgrade">Crown Makeover · รายห้อง</h3>
+                <p class="x-price-card__amount">฿1,290 <small data-th="/ ประกาศ" data-en="/ listing">/ ประกาศ</small></p>
+                <p class="x-price-card__desc" data-th="ปรับคมชัดภาพทั้งชุด ย้ายลายน้ำเข้ามุม เพิ่มแผนที่/แปลนห้อง ตรวจสอบและเขียนคำบรรยาย 2 ภาษา พร้อมลิงก์หน้าพรีเซนต์ส่งลูกค้า VIP" data-en="Full 2x photo restoration, silent corner watermark, tail-end map & floor plan cards, native TH/EN copy audit, and a bilingual client showcase link.">ปรับคมชัดภาพทั้งชุด ย้ายลายน้ำเข้ามุม เพิ่มแผนที่/แปลนห้อง ตรวจสอบและเขียนคำบรรยาย 2 ภาษา พร้อมลิงก์หน้าพรีเซนต์ส่งลูกค้า VIP</p>
+              </div>
+              <div class="x-btn-row">
+                <button type="button" class="x-action-btn" data-open-qr="single" data-th="สแกน PromptPay QR เพื่อสั่งทำ" data-en="Scan PromptPay QR to Order">สแกน PromptPay QR เพื่อสั่งทำ</button>
+              </div>
+            </div>
+
+            <div class="x-price-card">
+              <div>
+                <span class="x-price-card__badge" data-th="แพ็กเกจรายเดือนสุดคุ้ม" data-en="Monthly Agent Pack">แพ็กเกจรายเดือนสุดคุ้ม</span>
+                <h3 class="x-price-card__title" data-th="10 ประกาศ / เดือน" data-en="10 Listings / Month">10 ประกาศ / เดือน</h3>
+                <p class="x-price-card__amount">฿8,900 <small data-th="/ เดือน (฿890/ห้อง)" data-en="/ mo (฿890/listing)">/ เดือน (฿890/ห้อง)</small></p>
+                <p class="x-price-card__desc" data-th="ส่งลิงก์ประกาศให้คุณมะลิทาง LINE ได้ตลอดทั้งเดือน รับไฟล์พร้อมโพสต์และหน้าเว็บสองภาษาภายใน 24 ชม." data-en="Send any 10 listings a month via LINE. Receive full high-res assets, native bilingual copy, and client showcase links within 24 hours.">ส่งลิงก์ประกาศให้คุณมะลิทาง LINE ได้ตลอดทั้งเดือน รับไฟล์พร้อมโพสต์และหน้าเว็บสองภาษาภายใน 24 ชม.</p>
+              </div>
+              <div class="x-btn-row">
+                <button type="button" class="x-action-btn x-action-btn--outline" data-open-qr="monthly" data-th="สแกน QR หรือทัก LINE รายเดือน" data-en="Scan QR or Start on LINE">สแกน QR หรือทัก LINE รายเดือน</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="x-qr-modal" id="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-title">
+            <div class="x-qr-box">
+              <h3 id="qr-title" data-th="สแกนชำระเงินผ่าน PromptPay QR" data-en="Scan to Pay via PromptPay QR">สแกนชำระเงินผ่าน PromptPay QR</h3>
+              <p id="qr-subtitle" data-th="หลังสแกนชำระเงิน ส่งสลิปและลิงก์ประกาศให้คุณมะลิทาง LINE ได้ทันทีค่ะ" data-en="After scanning, simply send your slip and listing link to Khun Mali on LINE.">หลังสแกนชำระเงิน ส่งสลิปและลิงก์ประกาศให้คุณมะลิทาง LINE ได้ทันทีค่ะ</p>
+              <div class="x-qr-placeholder" aria-label="PromptPay QR Code">
+                <svg viewBox="0 0 120 120" width="175" height="175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="120" height="120" rx="8" fill="#FFFFFF"/>
+                  <rect x="10" y="10" width="32" height="32" rx="4" stroke="#161F39" stroke-width="6"/>
+                  <rect x="20" y="20" width="12" height="12" rx="2" fill="#161F39"/>
+                  <rect x="78" y="10" width="32" height="32" rx="4" stroke="#161F39" stroke-width="6"/>
+                  <rect x="88" y="20" width="12" height="12" rx="2" fill="#161F39"/>
+                  <rect x="10" y="78" width="32" height="32" rx="4" stroke="#161F39" stroke-width="6"/>
+                  <rect x="20" y="88" width="12" height="12" rx="2" fill="#161F39"/>
+                  <rect x="52" y="12" width="6" height="6" fill="#161F39"/>
+                  <rect x="62" y="18" width="6" height="12" fill="#161F39"/>
+                  <rect x="50" y="34" width="12" height="6" fill="#161F39"/>
+                  <rect x="12" y="52" width="12" height="6" fill="#161F39"/>
+                  <rect x="30" y="50" width="6" height="16" fill="#161F39"/>
+                  <rect x="46" y="46" width="28" height="28" rx="6" fill="#00A665"/>
+                  <path d="M53 56l4 4 4-6 4 6 4-4-2 9H55l-2-9z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+                  <rect x="82" y="50" width="8" height="8" fill="#161F39"/>
+                  <rect x="96" y="54" width="12" height="6" fill="#161F39"/>
+                  <rect x="80" y="68" width="14" height="6" fill="#161F39"/>
+                  <rect x="50" y="82" width="8" height="14" fill="#161F39"/>
+                  <rect x="64" y="86" width="14" height="6" fill="#161F39"/>
+                  <rect x="86" y="82" width="10" height="10" fill="#161F39"/>
+                  <rect x="98" y="96" width="10" height="12" fill="#161F39"/>
+                  <rect x="64" y="100" width="22" height="8" fill="#161F39"/>
+                </svg>
+              </div>
+              <p style="font-weight:600; color:var(--text-primary); margin-bottom:14px;" data-th="Crown Listings · คุณมะลิ (ชำระผ่าน QR หรือโอนผ่าน LINE)" data-en="Crown Listings · Khun Mali (PromptPay QR or Manual LINE Transfer)">Crown Listings · คุณมะลิ (ชำระผ่าน QR หรือโอนผ่าน LINE)</p>
+              <button type="button" class="x-action-btn x-action-btn--outline" id="qr-close" data-th="ปิดหน้าต่าง" data-en="Close">ปิดหน้าต่าง</button>
+            </div>
+          </div>
+          <script>
+            (function() {
+              var modal = document.getElementById("qr-modal");
+              var closeBtn = document.getElementById("qr-close");
+              document.querySelectorAll("[data-open-qr]").forEach(function(btn) {
+                btn.addEventListener("click", function() {
+                  if (modal) modal.classList.add("is-open");
+                });
+              });
+              if (closeBtn) closeBtn.addEventListener("click", function() { modal.classList.remove("is-open"); });
+              if (modal) modal.addEventListener("click", function(e) { if (e.target === modal) modal.classList.remove("is-open"); });
+            })();
+          </script>
+<!-- CROWN_CHECKOUT_END -->
           <aside class="callout" aria-label="ขั้นตอนถัดไป" data-th-aria-label="ขั้นตอนถัดไป" data-en-aria-label="Next step">
             <p class="callout__head" data-th="ขั้นตอนถัดไป" data-en="Next step">ขั้นตอนถัดไป</p>
             <p class="callout__lead">
