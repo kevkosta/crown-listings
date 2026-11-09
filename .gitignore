@@ -1,0 +1,8 @@
+# OS & Editor files
+desktop.ini
+Thumbs.db
+.DS_Store
+*.lnk
+
+# Exclude personal Telegram Desktop folder inside resources
+' resources/Websites/Telegram Desktop/
