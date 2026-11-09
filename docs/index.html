@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0148)https://hark.site/s/fdd8b142-8fa0-41f3-8a9b-efcdea293ff5/index.html?hark_region=us&pt=1794232767.XtAHGD4Ceuj8RKkJuEd48qSf-gkKxt_l8uprJ_gcTOw&via=app -->
-<html lang="en" class="x-js js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>[data-hark-action]:not([data-hark-ready]){display:none!important}</style>
+<html lang="en" class="x-js js" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>[data-hark-action]:not([data-hark-ready]){display:none!important}</style>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crown Listings · Beautiful living, priced for real life</title>
@@ -1316,7 +1316,7 @@ tr.is-highlight > :last-child { box-shadow: 12px 0 var(--fill-tertiary); }
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var btn = doc.getElementById("theme-btn"), mq = window.matchMedia("(prefers-color-scheme: dark)");
     try { var saved = localStorage.getItem("hark-theme"); if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved); } catch (e) { /* storage blocked: follow the system theme */ }
-    function current() { var t = root.getAttribute("data-theme"); return t === "light" || t === "dark" ? t : (mq.matches ? "dark" : "light"); }
+    function current() { var t = root.getAttribute("data-theme"); return t === "dark" ? "dark" : "light"; }
     function label() { if (btn) btn.setAttribute("aria-label", current() === "dark" ? "Switch to light theme" : "Switch to dark theme"); }
     if (btn) btn.addEventListener("click", function () {
       var next = current() === "dark" ? "light" : "dark";
